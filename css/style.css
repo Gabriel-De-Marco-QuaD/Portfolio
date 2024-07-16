@@ -1,0 +1,268 @@
+/*-----Reset da página----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/*------------------------*/
+/*---Estilo-de-font-do-site---*/
+html,body{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    background-color: black;
+}
+/*------------------------*/
+/*-----Classes-comuns-do-site-----*/
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/*------------------------*/
+/*----Cabeçalho----*/
+.header{
+    display: flex;
+    background-color: rgb(23, 22, 20);
+    padding: 15px;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logodiv{
+    padding: 10px 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.logodiv a{
+    text-decoration: none;
+}
+
+.logodiv h1{
+    display: inline-block;
+    color: white;
+    font-size: 28px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.menu-desktop{
+    width: 70%;
+}
+
+.menu-desktop ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+.menu-desktop li{
+    display: inline-block;
+    padding: 28px 20px 0 0;
+    cursor: pointer;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+}
+
+.menu-desktop p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+/*------------------------*/
+/*----section-sobre----*/
+section.sobre{
+    width: 100%;
+    color: white;
+    display: flex;
+}
+
+.sobre-mim{
+    width: 50%;
+    padding: 200px 0 0 20px;
+    text-align: justify;
+}
+
+.sobre-mim h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sobre-mim p{
+    font-size: 20px;
+}
+
+.sobre-mim li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.redes-sociais{
+    padding-top: 20px;
+}
+
+.redes-sociais li{
+    padding-right: 15px;
+}
+
+.redes-sociais i{
+    padding: 5px;
+    border: 1px solid;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50%;
+    font-size: 25px;
+}
+
+.container-foto{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.foto{
+    padding-top: 180px;
+    max-width: 350px;
+    border-radius: 50%;
+}
+
+.sombra{
+    background: rgb(2,3,33);
+    background: -moz-linear-gradient(150deg, rgba(2,3,33,1) 20%, rgba(32,27,167,1) 50%, rgba(2,3,33,1) 80%);
+    background: -webkit-linear-gradient(150deg, rgba(2,3,33,1) 20%, rgba(32,27,167,1) 50%, rgba(2,3,33,1) 80%);
+    background: linear-gradient(150deg, rgba(2,3,33,1) 20%, rgba(32,27,167,1) 50%, rgba(2,3,33,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020321",endColorstr="#020321",GradientType=1);
+    background-size: 120% 120%;
+}
+
+.foto img{
+    max-width: inherit;
+    border-radius: 50%;
+}
+/*------------------------*/
+/*-----section-Projetos-----*/
+.projetos{
+    text-align: center;
+}
+
+.line-wraper{
+    width: 100%;
+    position: relative;
+    padding-top: 50px;
+}
+
+.line{
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    border-bottom: 3px solid white;
+    border-radius: 50%;
+}
+
+.line-wraper h2{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 2%;
+    background-color: black;
+}
+
+.projeto-wraper{  
+    display: flex;
+    padding: 5px 5px 30px 5px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projeto-single{
+    position: relative;
+    padding: 10px;
+}
+
+.projeto-single a{
+    text-decoration: none;
+}
+
+.projeto-single a img{
+    max-width: 320px;
+    min-height: 430px;
+}
+
+.projeto-single h3{
+    color: #ccc;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.shadow-projeto{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 320px;
+    height: 430px;
+    z-index: 1;
+}
+
+.shadow-projeto:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info-projeto{
+    color: white;
+    background-color: rgb(23, 22, 20);
+    padding: 15px;
+    position: absolute;
+    left: 4px;
+    bottom: 70px;
+    z-index: 2;
+}
+
+.info-projeto p:last-child:hover{
+    color: #747171;
+}
+
+/*------------------------*/
+/*----media-queries----*/
+@media screen and (max-width: 900px){
+    section.sobre{
+        display: block;
+    }
+
+    .sobre-mim{
+        padding: 150px 5% 0 5%;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .sobre-mim h1{
+        font-size: 25px;
+    }
+    
+    .sobre-mim p{
+        font-size: 18px;
+    }
+    
+    .container-foto{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .foto{
+        padding-top: 50px;
+    }
+
+}
+/*------------------------*/

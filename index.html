@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagens/logopage.png">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logodiv"><a href="#"><h1>GM</h1></a></div>
+            <div class="menu-desktop">
+                <ul>
+                    <li onclick="scrollSobre()"><p>Sobre Mim</p></li>
+                    <li onclick="scrollProjetos()"><p>Meus Projetos</p></li>                   
+                </ul>
+            </div><!--menu-->  
+        </header>
+    </div><!--container-header-->
+    <section id="mySobre" class="sobre container">
+            <div class="sobre-mim">
+                <h1>Olá, sou Gabriel Gelatti de Marco!</h1>
+                <p>
+                    <br/>
+                    Sou desenvolvedor front-end em formação, que se apaixonou pela tecnologia através dos videogames.                  
+                </p>
+                <p>
+                    <br/>
+                    Essa paixão me motivou a explorar mais a fundo o mundo do desenvolvimento de software, 
+                    levando-me a estudar programação.
+                </p>
+                <p>
+                    <br/>
+                    Hoje, estou empenhado em adquirir as habilidades necessárias para me tornar um profissional versátil e competente,
+                     capaz de desenvolver tanto o front-end quanto o back-end de aplicações robustas e inovadoras.
+                </p>           
+                <ul class="redes-sociais">
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriel-gelatti-de-marco-0961ba2a3/" title="Ir para o LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5554999226360" title="Entrar em contato pelo WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Gabriel-De-Marco-QuaD" title="Ir para o GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/gabriel_de_marco_/" title="Ir para o Intagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-foto">
+                <div class="foto">
+                    <img class="sombra" src="imagens/foto-perfil-transparente.png" alt="Foto do Portfólio do Gabriel">
+                </div>
+            </div>
+    </section><!--sobre-->
+    <section class="projetos container">
+        <div class="line-wraper">
+            <div class="line"></div>
+            <h2>Meus Projetos</h2>
+        </div>
+        <div class="projeto-wraper">
+            <div class="projeto-single">
+                <a href="#" target="_blank">
+                    <img src="imagens/placeholder.png" alt="Prévia do Projeto"/>
+                    <h3>Primeiro Projeto</h3>
+                    <div class="shadow-projeto"></div>
+                    <div class="info-projeto">
+                        <p>Projeto feito com HTML, CSS e JavaScript</p>
+                        <p>🔗 Ver no GitHub</p>
+                    </div>
+                </a>
+            </div><!--projeto-single-->
+            <div class="projeto-single">
+                <a href="#" target="_blank">
+                    <img src="imagens/placeholder.png" alt="Prévia do Projeto"/>
+                    <h3>Segundo Projeto</h3>
+                    <div class="shadow-projeto"></div>
+                    <div class="info-projeto">
+                        <p>Projeto feito com HTML, CSS e JavaScript</p>
+                        <p>🔗 Ver no GitHub</p>
+                    </div>
+                </a>
+            </div><!--projeto-single-->
+            <div class="projeto-single">
+                <a href="#" target="_blank">
+                    <img src="imagens/projeto_3.png" alt="Prévia do Projeto"/>
+                    <h3>Projeto Sistema Solar</h3>
+                    <div class="shadow-projeto"></div>
+                    <div class="info-projeto">
+                        <p>Projeto feito com HTML, CSS e JavaScript</p>
+                        <p>🔗 Ver no GitHub</p>
+                    </div>
+                </a>
+            </div><!--projeto-single-->
+        </div>
+    </section><!--projetos-->
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
